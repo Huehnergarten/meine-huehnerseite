@@ -19,13 +19,18 @@
     <main class="gallery">
       <h1>Hühner Galerie</h1>
       <div class="image-grid">
-        <img src="Huehner_auf_die_Wiese.jpg" alt="Huhn 1">
-        <img src="Huehner_mit_Kuehcken1.jpg" alt="Huhn 2">
-        <img src="Huehner4_auf_die_Wiese.jpg" alt="Huhn 3">
-        <img src="Huehner.jpg" alt="Huhn 4">
-        <img src="Huehner1_mit_Kuehcken.jpg" alt="Huhn 5">
-        <img src="Huehner_zusammen_eine_Ecke.jpg" alt="Huhn 6">
+        <img src="Huehner_auf_die_Wiese.jpg" alt="Huhn 1" onclick="openLightbox(this)">
+        <img src="Huehner_mit_Kuehcken1.jpg" alt="Huhn 2" onclick="openLightbox(this)">
+        <img src="Huehner4_auf_die_Wiese.jpg" alt="Huhn 3" onclick="openLightbox(this)">
+        <img src="Huehner.jpg" alt="Huhn 4" onclick="openLightbox(this)">
+        <img src="Huehner1_mit_Kuehcken.jpg" alt="Huhn 5" onclick="openLightbox(this)">
+        <img src="Huehner_zusammen_eine_Ecke.jpg" alt="Huhn 6" onclick="openLightbox(this)">
       </div>
+      <!-- Lightbox Container -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" src="" alt="Großansicht">
+</div>
     </main>
   </div>
   <script>
