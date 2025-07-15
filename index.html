@@ -1,48 +1,32 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Meine Hühner</title>
-<style>
-body {
-  font-family: sans-serif;
-  background: #f9f9f9;
-  text-align: center;
-  padding: 2em;
-}
-#inhalt.galerie div{
-  border: 1px solid white;
-  width: 33%
-  min-width: 200px;
-  height: 30em;
-  margin: lem 0 0 0.5%;
-  float: left;
-  text-align: center;
-  padding: 0;
-  color: white;}
-  #inhalt.galerie img {
-    max-width: 100%;
-    max-height: 66%;}
-
-</style>
+  <title>Hühner Galerie</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Willkommen bei meinen Hühnern</h1>
-  <div class="galerie" id="inhalt">
-<div id="Bild1"><img src="Huehner_auf_die_Wiese.jpg" alt="Hühner1">
-</div>
-<div id="Bild2"><img src="Huehner_mit_Kuehcken1.jpg" alt="Hühner2">
-</div>
-<div id="Bild3"><img src="Huehner1_mit_Kuehcken.jpg" alt="Hühner3">
-</div>
-<div id="Bild4"><img src="Huehner4_auf_die_Wiese.jpg" alt="Hühner4">
-</div>
-    <div id="Bild5"><img src="Huehner.jpg" alt="Hühner5">
-</div>
-    <div id="Bild6"><img src="Huehner_zusammen_eine_Ecke.jpg" alt="Hühner6">
-</div>
+  <div class="container">
+    <nav class="sidebar">
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="index.html">Galerie</a></li>
+        <li><a href="#">Eier Preis</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <main class="gallery">
+      <h1>Hühner Galerie</h1>
+      <div class="image-grid">
+        <img src="Huehner_auf_die_Wiese.jpg" alt="Huhn 1">
+        <img src="Huehner_mit_Kuehcken1.jpg" alt="Huhn 2">
+        <img src="Huehner4_auf_die_Wiese.jpg" alt="Huhn 3">
+        <img src="Huehner.jpg" alt="Huhn 4">
+        <img src="Huehner1_mit_Kuehcken.jpg" alt="Huhn 5">
+        <img src="Huehner_zusammen_eine_Ecke.jpg" alt="Huhn 6">
+      </div>
+    </main>
   </div>
-    
-  <p>Frische Eier vom Land – direkt von meinen Hühnern!</p>
 </body>
 </html>
